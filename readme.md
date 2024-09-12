@@ -1,4 +1,4 @@
-# Algeria Fire Detection Prediction Model
+# Algeria Fire prediction
 
 In this project, I experimented with the step-by-step implementation of an ML project lifecycle. It involves data cleaning, exploratory data analysis (EDA), feature engineering, model training, and hyperparameter tuning. After completing the machine learning part, I developed a user interface using Flask and hosted the project on GitHub.
 
