@@ -27,29 +27,20 @@ Ensure you have the following installed:
 
 ### Setup
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-repo/algeria-fire-detection.git
-   cd algeria-fire-detection
-   ```
-
-2. Install dependencies:
+1. Install dependencies:
    ```bash
    pip install -r requirements.txt
    ```
 
-3. Ensure the necessary model and preprocessor files are available in the correct directories:
+2. Ensure the necessary model and preprocessor files are available in the correct directories:
    - `Preprocessors/KNNImputer.pkl`
    - `Preprocessors/outlier_bounds.json`
    - `Preprocessors/RobustScalar.pkl`
    - `Model/LassoCV.pkl`
-
-4. Run the Flask application:
+3. Run the Flask application:
    ```bash
    python application.py
    ```
-
-The application will run on `http://127.0.0.1:5000/`.
 
 ## Usage
 
