@@ -1,0 +1,30 @@
+{
+    "Temperature": {
+        "lower_bound": 22.5,
+        "upper_bound": 42.5
+    },
+    "RH": {
+        "lower_bound": 20.0,
+        "upper_bound": 106.0
+    },
+    "Ws": {
+        "lower_bound": 9.5,
+        "upper_bound": 21.5
+    },
+    "Rain": {
+        "lower_bound": -0.7124999999999999,
+        "upper_bound": 1.1875
+    },
+    "FFMC": {
+        "lower_bound": 42.300000000000004,
+        "upper_bound": 116.5
+    },
+    "DMC": {
+        "lower_bound": -17.6,
+        "upper_bound": 44.599999999999994
+    },
+    "ISI": {
+        "lower_bound": -7.712499999999999,
+        "upper_bound": 16.5875
+    }
+}
