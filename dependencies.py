@@ -25,3 +25,9 @@ logger = logging.getLogger()
 logger.setLevel(logging.INFO)
 logger.addHandler(file_handler)
 logger.addHandler(console_handler)
+
+def data_transormer(data):
+    pass
+
+def predict_FWI(data):
+    pass
