@@ -106,4 +106,21 @@ def data_transormer(data):
         raise
 
 def predict_FWI(data):
-    pass
+    try:
+         # Ensure the dtype of specific columns are float
+        columns_to_float = ['Rain', 'FFMC', 'DMC', 'ISI']
+        for col in columns_to_float:
+            if col in data.columns:
+                if not pd.api.types.is_float_dtype(data[col]):
+                    data[col] = pd.to_numeric(data[col], errors='coerce')
+        data = data_transformer(data)
+
+        with open("Model/LassoCV.pkl", 'rb') as model_data:
+            model = pickle.load(model_data)
+        
+        prediction = model.predict(data)
+        logging.info(f"Prediction: {prediction[0]}")
+        return round(prediction[0], 2)
+    except Exception as e:
+        logging.error(f"Error in predict_FWI: {e}")
+        raise
